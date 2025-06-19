@@ -1,21 +1,23 @@
 
 export default function Signup() {
   return (
-    <div className="p-6 max-w-lg mx-auto">
-      <h2 className="text-xl font-semibold mb-4">Create Your Account</h2>
-      <form className="space-y-4">
-        <input type="text" placeholder="First Name" className="w-full p-2 border" />
-        <input type="text" placeholder="Last Name" className="w-full p-2 border" />
-        <input type="email" placeholder="Email" className="w-full p-2 border" />
-        <input type="password" placeholder="Password" className="w-full p-2 border" />
-        <input type="text" placeholder="Phone with Country Code" className="w-full p-2 border" />
-        <input type="text" placeholder="Country" className="w-full p-2 border" />
-        <a href="/tools">
-          <button type="button" className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700">
-            Next
-          </button>
-        </a>
-      </form>
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center px-4">
+      <div className="w-full max-w-md bg-gray-100 p-8 rounded-xl shadow-md">
+        <h2 className="text-2xl font-bold mb-6 text-center">Create Your Account</h2>
+        <form className="space-y-4">
+          <input type="text" placeholder="First Name" className="w-full p-3 border rounded-lg" />
+          <input type="text" placeholder="Last Name" className="w-full p-3 border rounded-lg" />
+          <input type="email" placeholder="Email" className="w-full p-3 border rounded-lg" />
+          <input type="password" placeholder="Password" className="w-full p-3 border rounded-lg" />
+          <input type="text" placeholder="Phone with Country Code" className="w-full p-3 border rounded-lg" />
+          <input type="text" placeholder="Country" className="w-full p-3 border rounded-lg" />
+          <a href="/tools">
+            <button type="button" className="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all">
+              Continue
+            </button>
+          </a>
+        </form>
+      </div>
     </div>
   );
 }
